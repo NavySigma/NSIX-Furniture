@@ -9,10 +9,7 @@ export default function Footer() {
       <div className="footer-inner container">
         <div className="footer-brand">
           <Link to="/" className="footer-logo">
-            <span className="logo-text">
-              <span className="logo-accent">N</span>SIX
-            </span>
-            <span className="logo-sub">Furniture</span>
+            <img src="/NSIX%20Logo.png" alt="NSIX Furniture" className="footer-logo-img" />
           </Link>
           <p>
             Spesialis pembuatan furniture custom berkualitas tinggi. Kitchen set, meja, lemari, dan
@@ -27,8 +24,7 @@ export default function Footer() {
 
         <div className="footer-links">
           <h4>Menu</h4>
-          <Link to="/">Beranda</Link>
-          <Link to="/produk">Produk</Link>
+          <Link to="/">Produk</Link>
           <Link to="/galeri">Galeri</Link>
           <Link to="/tentang">Tentang</Link>
           <Link to="/kontak">Kontak</Link>

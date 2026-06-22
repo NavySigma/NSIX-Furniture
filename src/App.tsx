@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 import Navbar from "./components/common/Navbar"
 import Footer from "./components/common/Footer"
-import Beranda from "./pages/Beranda"
 import Produk from "./pages/Produk"
 import Galeri from "./pages/Galeri"
 import Tentang from "./pages/Tentang"
@@ -15,8 +14,7 @@ export default function App() {
       <Navbar />
       <main>
         <Routes>
-          <Route path="/" element={<Beranda />} />
-          <Route path="/produk" element={<Produk />} />
+          <Route path="/" element={<Produk />} />
           <Route path="/galeri" element={<Galeri />} />
           <Route path="/tentang" element={<Tentang />} />
           <Route path="/kontak" element={<Kontak />} />

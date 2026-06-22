@@ -2,8 +2,7 @@ import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 
 const links = [
-  { to: "/", label: "Beranda" },
-  { to: "/produk", label: "Produk" },
+  { to: "/", label: "Produk" },
   { to: "/galeri", label: "Galeri" },
   { to: "/tentang", label: "Tentang" },
   { to: "/kontak", label: "Kontak" },
@@ -16,10 +15,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-inner container">
         <Link to="/" className="navbar-logo">
-          <span className="logo-text">
-            <span className="logo-accent">N</span>SIX
-          </span>
-          <span className="logo-sub">Furniture</span>
+          <img src="/NSIX%20Logo.png" alt="NSIX Furniture" className="logo-img" />
         </Link>
 
         <button
