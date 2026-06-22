@@ -1,7 +1,4 @@
-import { useState } from "react"
 import SectionTitle from "../components/ui/SectionTitle"
-
-const categories = ["Semua", "Kitchen Set", "Meja", "Lemari", "Kursi", "Interior"]
 
 const allPhotos = [
   { src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80", title: "Kitchen Set Modern", cat: "Kitchen Set" },
@@ -19,9 +16,6 @@ const allPhotos = [
 ]
 
 export default function Galeri() {
-  const [active, setActive] = useState("Semua")
-  const filtered = active === "Semua" ? allPhotos : allPhotos.filter((p) => p.cat === active)
-
   return (
     <main className="page-galeri">
       <section className="page-hero">
@@ -37,20 +31,8 @@ export default function Galeri() {
 
       <section className="section">
         <div className="container">
-          <div className="galeri-tabs">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                className={`tab-btn ${active === cat ? "active" : ""}`}
-                onClick={() => setActive(cat)}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
-
           <div className="galeri-grid full">
-            {filtered.map((photo, i) => (
+            {allPhotos.map((photo, i) => (
               <div key={i} className="galeri-card">
                 <img src={photo.src} alt={photo.title} loading="lazy" />
                 <div className="galeri-card-overlay">

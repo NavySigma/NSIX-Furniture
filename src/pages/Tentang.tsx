@@ -1,5 +1,5 @@
-import SectionTitle from "../components/ui/SectionTitle"
-import { waUrl } from "../utils/whatsapp"
+import SectionTitle from "../components/ui/SectionTitle";
+import { waUrl } from "../utils/whatsapp";
 
 export default function Tentang() {
   return (
@@ -24,13 +24,15 @@ export default function Tentang() {
           <div className="tentang-text">
             <h3>Spesialis Furniture Kayu Custom</h3>
             <p>
-              NSIX Furniture adalah bengkel furniture yang berfokus pada pembuatan kitchen set, meja,
-              lemari, laci, dan berbagai furnitur kayu custom. Kami mengutamakan kualitas bahan,
-              ketelitian pengerjaan, dan kepuasan pelanggan.
+              NSIX Furniture adalah bengkel furniture yang berfokus pada
+              pembuatan kitchen set, meja, lemari, laci, dan berbagai furnitur
+              kayu custom. Kami mengutamakan kualitas bahan, ketelitian
+              pengerjaan, dan kepuasan pelanggan.
             </p>
             <p>
-              Setiap produk dikerjakan oleh tenaga berpengalaman dengan kayu pilihan. Kami melayani
-              pemesanan untuk rumah tinggal, apartemen, kantor, hingga proyek properti.
+              Setiap produk dikerjakan oleh tenaga berpengalaman dengan kayu
+              pilihan. Kami melayani pemesanan untuk rumah tinggal, apartemen,
+              kantor, hingga proyek properti.
             </p>
 
             <div className="tentang-stats">
@@ -43,7 +45,7 @@ export default function Tentang() {
                 <span className="stat-label">Proyek Selesai</span>
               </div>
               <div className="stat">
-                <span className="stat-num">200+</span>
+                <span className="stat-num">400+</span>
                 <span className="stat-label">Pelanggan Puas</span>
               </div>
             </div>
@@ -54,7 +56,7 @@ export default function Tentang() {
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
-              Kenalan Lewat WhatsApp
+              Chat Via WhatsApp
             </a>
           </div>
         </div>
@@ -65,8 +67,9 @@ export default function Tentang() {
           <div className="visi-card">
             <h4>Visi</h4>
             <p>
-              Menjadi bengkel furniture custom terpercaya yang menghadirkan produk berkualitas
-              tinggi dengan harga terjangkau untuk setiap rumah di Indonesia.
+              Menjadi bengkel furniture custom terpercaya yang menghadirkan
+              produk berkualitas tinggi dengan harga terjangkau untuk setiap
+              rumah di Indonesia.
             </p>
           </div>
           <div className="visi-card">
@@ -81,5 +84,5 @@ export default function Tentang() {
         </div>
       </section>
     </main>
-  )
+  );
 }
