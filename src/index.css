@@ -567,6 +567,7 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.04);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: var(--shadow-sm);
+    display: flex; flex-direction: column; height: 100%;
 }
 
 .produk-card:hover {
@@ -609,6 +610,7 @@ img {
 
 .produk-card-body {
     padding: 24px;
+    display: flex; flex-direction: column; flex: 1;
 }
 
 .produk-card-body h3 {
@@ -622,13 +624,14 @@ img {
 .produk-card-body p {
     font-size: 14px;
     color: var(--gray);
-    line-height: 1.7;
-    margin-bottom: 20px;
+    line-height: 1.4;
+    margin-bottom: auto;
 }
 
 .produk-card-body .btn {
     padding: 12px 20px;
     font-size: 13px;
+    margin-top: 12px;
 }
 
 @media (max-width: 1024px) {

@@ -16,8 +16,8 @@ export default function Tentang() {
         <div className="container tentang-content">
           <div className="tentang-img">
             <img
-              src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=700&q=80"
-              alt="Workshop NSIX Furniture"
+              src="/nsix-gerbang.jpeg"
+              alt="NSIX Furniture"
               loading="lazy"
             />
           </div>
@@ -26,11 +26,11 @@ export default function Tentang() {
             <p>
               NSIX Furniture adalah bengkel furniture yang berfokus pada
               pembuatan kitchen set, meja, lemari, laci, dan berbagai furnitur
-              kayu custom. Kami mengutamakan kualitas bahan, ketelitian
+              custom. Kami mengutamakan kualitas bahan, ketelitian
               pengerjaan, dan kepuasan pelanggan.
             </p>
             <p>
-              Setiap produk dikerjakan oleh tenaga berpengalaman dengan kayu
+              Setiap produk dikerjakan oleh tenaga berpengalaman dengan bahan
               pilihan. Kami melayani pemesanan untuk rumah tinggal, apartemen,
               kantor, hingga proyek properti.
             </p>
@@ -75,7 +75,7 @@ export default function Tentang() {
           <div className="visi-card">
             <h4>Misi</h4>
             <ul>
-              <li>Mengutamakan kualitas bahan baku kayu terbaik</li>
+              <li>Mengutamakan kualitas bahan baku terbaik</li>
               <li>Memberikan pelayanan konsultasi gratis & ramah</li>
               <li>Mengerjakan setiap pesanan dengan penuh ketelitian</li>
               <li>Menjaga kepuasan pelanggan dengan garansi produk</li>

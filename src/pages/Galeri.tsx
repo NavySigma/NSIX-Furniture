@@ -1,30 +1,46 @@
-import SectionTitle from "../components/ui/SectionTitle"
+import SectionTitle from "../components/ui/SectionTitle";
 
 const allPhotos = [
-  { src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80", title: "Kitchen Set Modern", cat: "Kitchen Set" },
-  { src: "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=600&q=80", title: "Meja Makan Kayu Jati", cat: "Meja" },
-  { src: "https://images.unsplash.com/photo-1597006335771-2bee2977e91a?w=600&q=80", title: "Lemari Pakaian 3 Pintu", cat: "Lemari" },
-  { src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80", title: "Meja Tamu Minimalis", cat: "Meja" },
-  { src: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&q=80", title: "Kamar Tidur Custom", cat: "Interior" },
-  { src: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80", title: "Sofa Minimalis", cat: "Kursi" },
-  { src: "https://images.unsplash.com/photo-1567016432779-094069958ea5?w=600&q=80", title: "Meja Rias Cantik", cat: "Meja" },
-  { src: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&q=80", title: "Kitchen Set Klasik", cat: "Kitchen Set" },
-  { src: "https://images.unsplash.com/photo-1544457070-4cd773b4d71e?w=600&q=80", title: "Kursi Makan Jepara", cat: "Kursi" },
-  { src: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80", title: "Lemari Dapur", cat: "Lemari" },
-  { src: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80", title: "Rak Buku Custom", cat: "Interior" },
-  { src: "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=600&q=80", title: "Kitchen Set Luxury", cat: "Kitchen Set" },
-]
+  {
+    src: "/kitchen%20set1.png",
+    title: "Kitchen Set Modern",
+    cat: "Kitchen Set",
+  },
+  {
+    src: "/kitchen%20set2.webp",
+    title: "Kitchen Set Klasik",
+    cat: "Kitchen Set",
+  },
+  {
+    src: "/kitchen%20set3.png",
+    title: "Kitchen Set Luxury",
+    cat: "Kitchen Set",
+  },
+  { src: "/meja%20laci%20tv.png", title: "Meja & Laci TV", cat: "Meja" },
+  { src: "/Backdrof%20tv.webp", title: "Backdrop TV Custom", cat: "Interior" },
+  { src: "/pemasangan.png", title: "Proses Pemasangan", cat: "Interior" },
+  { src: "/pemasangan2.png", title: "Pemasangan Furniture", cat: "Interior" },
+  { src: "/galeri-kirim.png", title: "Pengiriman Produk", cat: "Interior" },
+
+  {
+    src: "/kitchen%20set1.png",
+    title: "Kitchen Set Minimalis",
+    cat: "Kitchen Set",
+  },
+  { src: "/kitchen-set4.jpeg", title: "Kitchen Set Elemen Terbuka", cat: "Kitchen Set" },
+  { src: "/meja-dapur.jpeg", title: "Meja Dapur Minimalis", cat: "Meja" },
+  { src: "/nsix-gerbang.jpeg", title: "Gerbang NSIX Furniture", cat: "Interior" },
+];
 
 export default function Galeri() {
   return (
     <main className="page-galeri">
       <section className="page-hero">
         <div className="container">
-          <SectionTitle subtitle="Portofolio">
-            Galeri Hasil Karya
-          </SectionTitle>
+          <SectionTitle subtitle="Portofolio">Galeri</SectionTitle>
           <p className="page-desc">
-            Beberapa hasil karya NSIX Furniture yang sudah kami kerjakan untuk pelanggan setia kami.
+            Beberapa hasil karya NSIX Furniture yang sudah kami kerjakan untuk
+            pelanggan setia kami.
           </p>
         </div>
       </section>
@@ -44,5 +60,5 @@ export default function Galeri() {
         </div>
       </section>
     </main>
-  )
+  );
 }

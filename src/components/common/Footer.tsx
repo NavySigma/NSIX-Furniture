@@ -13,7 +13,7 @@ export default function Footer() {
           </Link>
           <p>
             Spesialis pembuatan furniture custom berkualitas tinggi. Kitchen set, meja, lemari, dan
-            berbagai furnitur kayu dengan desain modern & klasik.
+            berbagai furnitur dengan desain modern & klasik.
           </p>
           <div className="footer-sosmed">
             <a href="https://wa.me/6281232749579" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">

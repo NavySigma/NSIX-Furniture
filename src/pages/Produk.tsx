@@ -4,91 +4,79 @@ import { waUrl } from "../utils/whatsapp"
 
 const products = [
   {
-    img: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    img: "/kitchen%20set1.png",
     kategori: "Kitchen Set",
-    nama: "Kitchen Set Minimalis Modern",
-    desc: "Desain sleek dengan kabinet solid, cocok untuk dapur mungil maupun besar.",
+    nama: "Kitchen Set Modern Minimalis",
+    desc: "Kabinet solid dengan desain bersih, cocok untuk dapur minimalis.",
   },
   {
-    img: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&q=80",
+    img: "/kitchen%20set2.webp",
     kategori: "Kitchen Set",
     nama: "Kitchen Set Klasik Eropa",
-    desc: "Sentuhan Eropa dengan ukiran detail, memberikan kesan mewah pada dapur.",
+    desc: "Sentuhan Eropa dengan ukiran detail, memberi kesan mewah pada dapur.",
   },
   {
-    img: "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=600&q=80",
+    img: "/meja%20laci%20tv.png",
     kategori: "Meja",
-    nama: "Meja Makan Kayu Solid",
-    desc: "Meja makan dari kayu jati pilihan, kuat dan tahan lama untuk keluarga.",
+    nama: "Meja TV",
+    desc: "Meja TV bahan solid pilihan, kuat dan tahan lama.",
   },
   {
-    img: "https://images.unsplash.com/photo-1567016432779-094069958ea5?w=600&q=80",
-    kategori: "Meja",
-    nama: "Meja Rias Cantik",
-    desc: "Meja rias dengan cermin dan laci penyimpanan, desain feminin elegan.",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1597006335771-2bee2977e91a?w=600&q=80",
-    kategori: "Lemari",
-    nama: "Lemari Pakaian 3 Pintu",
-    desc: "Lemari pakaian luas dengan sekat dan gantungan, cocok untuk kamar utama.",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80",
-    kategori: "Lemari",
-    nama: "Lemari Dapur & Pantry",
-    desc: "Lemari penyimpanan dapur dengan rak adjustable, praktis dan rapi.",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80",
+    img: "/Backdrof%20tv.webp",
     kategori: "Kursi",
-    nama: "Kursi Makan Ukir Jepara",
-    desc: "Kursi makan kayu dengan sentuhan ukir khas Jepara, kokoh dan artistik.",
+    nama: "Sofa Ruang Tamu Minimalis",
+    desc: "Sofa nyaman dengan rangka kokoh, cocok untuk ruang tamu.",
   },
   {
-    img: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80",
-    kategori: "Kursi",
-    nama: "Sofa Minimalis 2 Seater",
-    desc: "Sofa nyaman dengan rangka kayu kokoh, cocok untuk ruang tamu minimalis.",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&q=80",
+    img: "/Backdrof%20tv.webp",
     kategori: "Interior",
-    nama: "Tempat Tidur Minimalis",
-    desc: "Ranjang kayu dengan headboard empuk, desain simpel dan modern.",
+    nama: "Tempat Tidur Modern",
+    desc: "Ranjang dengan sandaran empuk, desain simpel dan modern.",
   },
   {
-    img: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80",
+    img: "/Backdrof%20tv.webp",
     kategori: "Interior",
-    nama: "Rak Buku Custom",
-    desc: "Rak buku sesuai ukuran dinding kamu, bisa kombinasi warna cat.",
+    nama: "Rak Buku Minimalis",
+    desc: "Rak buku sesuai ukuran dinding, bisa dikombinasi dengan warna cat.",
   },
   {
-    img: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80",
+    img: "/meja%20laci%20tv.png",
     kategori: "Meja",
     nama: "Meja Tamu & Nakas",
     desc: "Set meja tamu dengan nakas serasi, mempercantik ruang keluarga.",
   },
   {
-    img: "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=600&q=80",
+    img: "/kitchen%20set3.png",
     kategori: "Kitchen Set",
-    nama: "Kitchen Set Luxury",
-    desc: "Kitchen set premium dengan top table granit, desain modern elegan.",
+    nama: "Kitchen Set Premium Granit",
+    desc: "Kitchen set dengan meja granit, desain modern dan elegan.",
   },
   {
-    img: "https://images.unsplash.com/photo-1594761040030-4e0e2c6e3a7b?w=600&q=80",
+    img: "/kitchen-set4.jpeg",
+    kategori: "Kitchen Set",
+    nama: "Kitchen Set Elemen Terbuka",
+    desc: "Kitchen set dengan rak terbuka, praktis dan stylish.",
+  },
+  {
+    img: "/meja-dapur.jpeg",
+    kategori: "Meja",
+    nama: "Meja Dapur Minimalis",
+    desc: "Meja dapur dengan desain minimalis, cocok untuk ruang makan keluarga.",
+  },
+  {
+    img: "/meja%20laci%20tv.png",
     kategori: "Laci",
     nama: "Laci Bawah Meja Dapur",
     desc: "Laci tarik untuk menyimpan peralatan dapur, praktis dan hemat tempat.",
   },
   {
-    img: "https://images.unsplash.com/photo-1544457070-4cd773b4d71e?w=600&q=80",
+    img: "/meja%20laci%20tv.png",
     kategori: "Laci",
     nama: "Laci Bawah Tangga",
-    desc: "Manfaatkan space bawah tangga dengan laci custom ukuran pas.",
+    desc: "Manfaatkan ruang bawah tangga dengan laci ukuran presisi.",
   },
   {
-    img: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80",
+    img: "/meja%20laci%20tv.png",
     kategori: "Laci",
     nama: "Laci Meja Kerja Multifungsi",
     desc: "Laci meja kerja dengan sekat untuk alat tulis dan dokumen.",
@@ -149,12 +137,12 @@ export default function Produk() {
       <section className="dash-cta section">
         <div className="container">
           <SectionTitle subtitle="Hubungi Kami">
-            Yuk, Konsultasi Gratis!
+            Konsultasi Gratis
           </SectionTitle>
           <div className="dash-cta-content">
             <p>
-              Punya rencana buat furniture impian? Diskusikan dulu sama tim NSIX Furniture.
-              Gratis, tanpa biaya!
+            Punya rencana untuk furniture impian? Diskusikan bersama tim NSIX Furniture.
+            Gratis, tanpa biaya!
             </p>
             <a
               href={waUrl()}
