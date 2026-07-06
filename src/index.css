@@ -164,6 +164,15 @@ img {
     .section {
         padding: 60px 0;
     }
+    .section-title { margin-bottom: 40px; }
+    .page-desc { font-size: 15px; }
+}
+@media (max-width: 480px) {
+    .section-heading { font-size: 26px; }
+    .section-title { margin-bottom: 28px; }
+    .page-desc { font-size: 14px; max-width: 100%; }
+    .page-hero { padding: 120px 0 20px; }
+    .page-hero .section-heading { font-size: 30px; }
 }
 
 /* ===== PAGE HEADER ===== */
@@ -299,6 +308,7 @@ img {
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
+        margin-right: 8px;
     }
     .navbar-menu {
         position: fixed;
@@ -597,6 +607,27 @@ img {
 .produk-card-img.selected img {
     filter: brightness(0.7);
 }
+.produk-card-ig-hint {
+    position: absolute;
+    bottom: 10px; right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    z-index: 2;
+    pointer-events: none;
+}
+@media (max-width: 480px) {
+    .produk-card-ig-hint { font-size: 9px; padding: 3px 7px; bottom: 6px; right: 6px; }
+    .produk-card-ig-hint svg { width: 10px; height: 10px; }
+}
 .produk-card-overlay {
     position: absolute; inset: 0;
     background: rgba(0,0,0,0.3);
@@ -684,8 +715,20 @@ img {
 @media (max-width: 480px) {
     .produk-card-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+        gap: 10px;
     }
+    .produk-card-body { padding: 14px; }
+    .produk-card-body h3 { font-size: 15px; }
+    .produk-card-body p { font-size: 12px; line-height: 1.3; }
+    .produk-card-body .btn { padding: 10px 14px; font-size: 12px; margin-top: 8px; }
+    .produk-card-badge { font-size: 10px; padding: 4px 12px; top: 8px; left: 8px; }
+    .produk-card-overlay-btn { font-size: 12px; padding: 8px 18px; }
+    .produk-card-close { width: 28px; height: 28px; font-size: 13px; top: 6px; right: 6px; }
+    .produk-card-img { aspect-ratio: 4/3; }
+}
+
+@media (max-width: 480px) {
+    .page-produk .section:first-child { padding-top: 100px !important; }
 }
 
 /* ===== GALERI PAGE ===== */
@@ -792,12 +835,17 @@ img {
 @media (max-width: 480px) {
     .galeri-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 8px;
     }
     .galeri-grid.full {
         grid-template-columns: repeat(2, 1fr);
     }
+    .galeri-card-overlay span { font-size: 12px; padding: 10px; }
+    .galeri-tabs { gap: 8px; margin-bottom: 28px; }
+    .tab-btn { padding: 8px 16px; font-size: 12px; }
 }
+
+.page-tentang .page-hero { padding-bottom: 10px; }
 
 /* ===== TENTANG PAGE ===== */
 .tentang-content {
@@ -828,6 +876,8 @@ img {
     height: 500px;
     object-fit: cover;
 }
+
+.tentang-text { padding-left: 24px; padding-right: 24px; }
 
 .tentang-text h3 {
     font-size: 32px;
@@ -941,9 +991,11 @@ img {
         height: 300px;
     }
     .tentang-stats {
-        flex-direction: column;
-        gap: 12px;
+        gap: 10px;
     }
+    .stat { padding: 16px 12px; }
+    .stat-num { font-size: 24px; }
+    .stat-label { font-size: 11px; }
 }
 
 /* ===== KONTAK PAGE ===== */
@@ -1089,7 +1141,13 @@ img {
 @media (max-width: 480px) {
     .kontak-wrap {
         grid-template-columns: 1fr;
+        gap: 16px;
     }
+    .kontak-card { padding: 20px; }
+    .kontak-card h4 { font-size: 12px; }
+    .kontak-link { font-size: 14px; }
+    .kontak-text { font-size: 13px; }
+    .kontak-icon-wrap { width: 44px; height: 44px; font-size: 20px; }
 }
 
 /* ===== FOOTER ===== */
@@ -1216,8 +1274,31 @@ img {
 }
 
 @media (max-width: 768px) {
+    .footer { padding-top: 40px; }
     .footer-inner {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 0;
+        padding-bottom: 24px;
     }
+    .footer-links,
+    .footer-contact { display: none; }
+    .footer-brand { text-align: center; }
+    .footer-logo { justify-content: center; margin-bottom: 20px; }
+    .footer-brand p { text-align: center; }
+    .footer-sosmed { justify-content: center; margin-top: 24px; }
+    .footer-contact { padding-left: 20px; }
+    .footer-contact h4 { font-size: 15px; margin-bottom: 16px; }
+    .footer-contact a,
+    .footer-contact p { font-size: 13px; margin-bottom: 10px; }
+}
+@media (max-width: 480px) {
+    .footer-inner {
+        gap: 24px;
+        padding-bottom: 24px;
+    }
+    .footer-sosmed { justify-content: center; }
+    .footer-brand p { text-align: center; }
+    .footer-logo { justify-content: center; }
+    .footer-bottom p { font-size: 11px; }
+    .footer-bottom { padding: 16px 0; }
 }
