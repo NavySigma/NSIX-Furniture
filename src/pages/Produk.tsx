@@ -126,7 +126,7 @@ export default function Produk() {
                   <h3>{p.nama}</h3>
                   <p>{p.desc}</p>
                   <a
-                    href={waUrl(`saya tertarik dengan produk: ${p.nama}`, window.location.origin + p.img)}
+                    href={waUrl(`saya tertarik dengan produk: *${p.nama}*`, window.location.origin + p.img)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-primary btn-block"
