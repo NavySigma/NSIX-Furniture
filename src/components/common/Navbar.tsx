@@ -1,21 +1,25 @@
-import { useState } from "react"
-import { Link, NavLink } from "react-router-dom"
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const links = [
   { to: "/", label: "Produk" },
   { to: "/galeri", label: "Galeri" },
   { to: "/tentang", label: "Tentang" },
   { to: "/kontak", label: "Kontak" },
-]
+];
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <nav className="navbar">
       <div className="navbar-inner container">
         <Link to="/" className="navbar-logo">
-          <img src="/NSIX%20Logo.png" alt="NSIX Furniture" className="logo-img" />
+          <img
+            src="/NSIX%20Logo.png"
+            alt="NSIX Furniture"
+            className="logo-img"
+          />
         </Link>
 
         <button
@@ -34,7 +38,9 @@ export default function Navbar() {
               key={l.to}
               to={l.to}
               end={l.to === "/"}
-              className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
               onClick={() => setOpen(false)}
             >
               {l.label}
@@ -46,10 +52,10 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="nav-wa"
           >
-            Konsultasi Gratis
+            Konsultasi
           </a>
         </div>
       </div>
     </nav>
-  )
+  );
 }

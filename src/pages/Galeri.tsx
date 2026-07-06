@@ -8,12 +8,12 @@ const allPhotos = [
   },
   {
     src: "/kitchen%20set2.webp",
-    title: "Kitchen Set Klasik",
+    title: "Kitchen Set Granit",
     cat: "Kitchen Set",
   },
   {
     src: "/kitchen%20set3.png",
-    title: "Kitchen Set Luxury",
+    title: "Kitchen Set Klasik",
     cat: "Kitchen Set",
   },
   { src: "/meja%20laci%20tv.png", title: "Meja & Laci TV", cat: "Meja" },
@@ -27,7 +27,8 @@ const allPhotos = [
     title: "Kitchen Set Minimalis",
     cat: "Kitchen Set",
   },
-  { src: "/kitchen-set4.jpeg", title: "Kitchen Set Elemen Terbuka", cat: "Kitchen Set" },
+  { src: "/kitchen-set4.jpeg", title: "Meja TV", cat: "Meja" },
+  { src: "/Gemini_Generated_Image_63280i63280i6328.png", title: "Meja Tamu", cat: "Meja" },
   { src: "/meja-dapur.jpeg", title: "Meja Dapur Minimalis", cat: "Meja" },
   { src: "/nsix-gerbang.jpeg", title: "Gerbang NSIX Furniture", cat: "Interior" },
 ];

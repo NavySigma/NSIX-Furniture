@@ -20,11 +20,11 @@ export default function Kontak() {
           <div className="kontak-card">
             <div className="kontak-icon-wrap">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
               </svg>
             </div>
-            <h4>Telepon</h4>
-            <a href="tel:+6281232749579" className="kontak-link">+62 812-3274-9579</a>
+            <h4>Facebook</h4>
+            <a href="https://www.facebook.com/people/NSix-Furniture-Creation/100083247163188/" target="_blank" rel="noopener noreferrer" className="kontak-link">NSix Furniture Creation</a>
           </div>
 
           <div className="kontak-card kontak-card-wa">
@@ -40,12 +40,11 @@ export default function Kontak() {
           <div className="kontak-card">
             <div className="kontak-icon-wrap">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
               </svg>
             </div>
-            <h4>Jam Kerja</h4>
-            <p className="kontak-text">Senin - Sabtu: 08:00 - 17:00</p>
-            <p className="kontak-text">Minggu: Konsultasi via chat</p>
+            <h4>Email</h4>
+            <a href="mailto:natranio79@gmail.com" className="kontak-link">natranio79@gmail.com</a>
           </div>
 
           <div className="kontak-card">
@@ -55,7 +54,7 @@ export default function Kontak() {
               </svg>
             </div>
             <h4>Lokasi</h4>
-            <p className="kontak-text">Hubungi untuk alamat lengkap</p>
+            <a href="https://maps.google.com/?q=Jl.+Kapi+Woro+No.26+Jabon+Mangliawan+Pakis+Malang" target="_blank" rel="noopener noreferrer" className="kontak-link" style={{ fontSize: 13, fontWeight: 500 }}>Jl. Kapi Woro No.26, Jabon, Mangliawan, Kec. Pakis, Kabupaten Malang, Jawa Timur 65154</a>
           </div>
         </div>
 

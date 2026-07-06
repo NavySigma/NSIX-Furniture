@@ -15,19 +15,15 @@ export default function Tentang() {
       <section className="section">
         <div className="container tentang-content">
           <div className="tentang-img">
-            <img
-              src="/nsix-gerbang.jpeg"
-              alt="NSIX Furniture"
-              loading="lazy"
-            />
+            <img src="/nsix-gerbang.jpeg" alt="NSIX Furniture" loading="lazy" />
           </div>
           <div className="tentang-text">
-            <h3>Spesialis Furniture Kayu Custom</h3>
+            <h3>Spesialis Furniture Custom</h3>
             <p>
               NSIX Furniture adalah bengkel furniture yang berfokus pada
               pembuatan kitchen set, meja, lemari, laci, dan berbagai furnitur
-              custom. Kami mengutamakan kualitas bahan, ketelitian
-              pengerjaan, dan kepuasan pelanggan.
+              custom. Kami mengutamakan kualitas bahan, ketelitian pengerjaan,
+              dan kepuasan pelanggan.
             </p>
             <p>
               Setiap produk dikerjakan oleh tenaga berpengalaman dengan bahan

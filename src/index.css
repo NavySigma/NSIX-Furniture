@@ -580,6 +580,7 @@ img {
     position: relative;
     aspect-ratio: 4/3;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .produk-card-img img {
@@ -592,6 +593,42 @@ img {
 .produk-card:hover .produk-card-img img {
     transform: scale(1.1);
 }
+
+.produk-card-img.selected img {
+    filter: brightness(0.7);
+}
+.produk-card-overlay {
+    position: absolute; inset: 0;
+    background: rgba(0,0,0,0.3);
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+.produk-card-overlay.visible {
+    opacity: 1; pointer-events: auto;
+}
+.produk-card-overlay-btn {
+    color: #fff; font-size: 15px; font-weight: 700;
+    letter-spacing: 0.5px; text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 28px; border: 2px solid rgba(255,255,255,0.7);
+    border-radius: 50px; backdrop-filter: blur(4px);
+    transition: background 0.2s;
+}
+.produk-card-overlay-btn:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+.produk-card-close {
+    position: absolute; top: 10px; right: 10px;
+    width: 36px; height: 36px;
+    background: rgba(0,0,0,0.5); border: 2px solid rgba(255,255,255,0.7);
+    color: #fff; font-size: 16px; line-height: 1;
+    border-radius: 50%; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s;
+}
+.produk-card-close:hover { background: rgba(255,255,255,0.25); }
 
 .produk-card-badge {
     position: absolute;
