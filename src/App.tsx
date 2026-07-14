@@ -12,14 +12,13 @@ export default function App() {
     <>
       <ScrollToTop />
       <Navbar />
-      <main>
-        <Routes>
-          <Route path="/" element={<Produk />} />
-          <Route path="/galeri" element={<Galeri />} />
-          <Route path="/tentang" element={<Tentang />} />
-          <Route path="/kontak" element={<Kontak />} />
-        </Routes>
-      </main>
+      <h1 className="sr-only">NSIX Furniture Creation</h1>
+      <Routes>
+        <Route path="/" element={<Produk />} />
+        <Route path="/galeri" element={<Galeri />} />
+        <Route path="/tentang" element={<Tentang />} />
+        <Route path="/kontak" element={<Kontak />} />
+      </Routes>
       <Footer />
     </>
   )
