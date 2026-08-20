@@ -1,9 +1,14 @@
+import { Helmet } from "react-helmet-async";
 import SectionTitle from "../components/ui/SectionTitle";
 import { waUrl } from "../utils/whatsapp";
 
 export default function Tentang() {
   return (
     <main className="page-tentang">
+      <Helmet>
+        <link rel="canonical" href="https://www.nsix.web.id/tentang" />
+        <title>Tentang Kami - NSIX Furniture Creation</title>
+      </Helmet>
       <section className="page-hero">
         <div className="container">
           <SectionTitle subtitle="Tentang Kami">

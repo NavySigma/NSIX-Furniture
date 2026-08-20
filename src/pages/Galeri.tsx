@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import SectionTitle from "../components/ui/SectionTitle";
 
 const allPhotos = [
@@ -28,14 +29,26 @@ const allPhotos = [
     cat: "Kitchen Set",
   },
   { src: "/kitchen-set4.jpeg", title: "Meja TV", cat: "Meja" },
-  { src: "/Gemini_Generated_Image_63280i63280i6328.png", title: "Meja Tamu", cat: "Meja" },
+  {
+    src: "/Gemini_Generated_Image_63280i63280i6328.png",
+    title: "Meja Tamu",
+    cat: "Meja",
+  },
   { src: "/meja-dapur.jpeg", title: "Meja Dapur Minimalis", cat: "Meja" },
-  { src: "/nsix-gerbang.jpeg", title: "Gerbang NSIX Furniture", cat: "Interior" },
+  {
+    src: "/nsix-gerbang.jpeg",
+    title: "Gerbang NSIX Furniture",
+    cat: "Interior",
+  },
 ];
 
 export default function Galeri() {
   return (
     <main className="page-galeri">
+      <Helmet>
+        <link rel="canonical" href="https://www.nsix.web.id/galeri" />
+        <title>Galeri - NSIX Furniture Creation</title>
+      </Helmet>
       <section className="page-hero">
         <div className="container">
           <SectionTitle subtitle="Portofolio">Galeri</SectionTitle>
